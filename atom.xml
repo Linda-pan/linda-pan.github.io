@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Jpan的博客1</title>
+  <title>Jpan的博客</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.jpan.ink/"/>
+  <link href="https://www.jpan.ink/"/>
   <updated>2018-03-22T10:16:41.487Z</updated>
-  <id>http://www.jpan.ink/</id>
+  <id>https://www.jpan.ink/</id>
   
   <author>
     <name>Jing Pan</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://www.jpan.ink/2018/03/22/hello-world/"/>
-    <id>http://www.jpan.ink/2018/03/22/hello-world/</id>
+    <link href="https://www.jpan.ink/2018/03/22/hello-world/"/>
+    <id>https://www.jpan.ink/2018/03/22/hello-world/</id>
     <published>2018-03-22T10:16:41.483Z</published>
     <updated>2018-03-22T10:16:41.487Z</updated>
     
