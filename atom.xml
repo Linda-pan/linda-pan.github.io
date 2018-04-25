@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jpan.ink/"/>
-  <updated>2018-03-22T10:16:41.487Z</updated>
+  <updated>2018-04-25T09:57:07.149Z</updated>
   <id>https://www.jpan.ink/</id>
   
   <author>
@@ -15,6 +15,80 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>app显示大图切换</title>
+    <link href="https://www.jpan.ink/2018/04/25/app%E6%98%BE%E7%A4%BA%E5%A4%A7%E5%9B%BE%E5%88%87%E6%8D%A2/"/>
+    <id>https://www.jpan.ink/2018/04/25/app显示大图切换/</id>
+    <published>2018-04-25T09:17:51.000Z</published>
+    <updated>2018-04-25T09:57:07.149Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://www.jpan.ink">jpan</a>!</p><h3 id="app显示大图切换"><a href="#app显示大图切换" class="headerlink" title="app显示大图切换"></a>app显示大图切换</h3><h4 id="在html后面增加js"><a href="#在html后面增加js" class="headerlink" title="在html后面增加js"></a>在html后面增加js</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过JSBridge来控制图片</span><br></pre></td></tr></table></figure><pre><code>&lt;script&gt;if(window.capvisionJSBridge){    function showImage(index,urls){        window.capvisionJSBridge.trigger(            JSON.stringify({                action:&apos;showImage&apos;,                data:{                    index:index,                    urls:urls                }            })        );    }var $=document.querySelectorAll.bind(document);var $images=$(&apos;img&apos;);var sources=[];for(i=0;i&lt;$images.length;i++){    var $item=$images[i];    $item.onclick=function(event){        var src=event.target.getAttribute(&apos;src&apos;);        showImage(sources.indexOf(src),sources)};        sources.push($item.getAttribute(&apos;src&apos;));    }}&lt;/script&gt;</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;http://www.jpan.ink&quot;&gt;jpan&lt;/a&gt;!&lt;/p&gt;
+&lt;h3 id=&quot;app显示大图切换&quot;&gt;&lt;a href=&quot;#app显示大图切换&quot; class=&quot;headerlink&quot; title=&quot;app显示大图切换&quot;&gt;&lt;/a&gt;a
+      
+    
+    </summary>
+    
+    
+      <category term="页面" scheme="https://www.jpan.ink/tags/%E9%A1%B5%E9%9D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>json与list的转换</title>
+    <link href="https://www.jpan.ink/2018/03/29/json%E4%B8%8Elist%E7%9A%84%E8%BD%AC%E6%8D%A2/"/>
+    <id>https://www.jpan.ink/2018/03/29/json与list的转换/</id>
+    <published>2018-03-29T02:28:40.000Z</published>
+    <updated>2018-04-25T09:57:07.148Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://www.jpan.ink">jpan</a>!</p><h3 id="当不通过form-data进行传送数据时"><a href="#当不通过form-data进行传送数据时" class="headerlink" title="当不通过form-data进行传送数据时"></a>当不通过form-data进行传送数据时</h3><h4 id="无法直接传json的list-可以通过转换为String传送"><a href="#无法直接传json的list-可以通过转换为String传送" class="headerlink" title="无法直接传json的list 可以通过转换为String传送"></a>无法直接传json的list 可以通过转换为String传送</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">contentStr = <span class="built_in">JSON</span>.stringify(list),</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object content = JSONArray.parseArray(contentStr, Object.class)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;http://www.jpan.ink&quot;&gt;jpan&lt;/a&gt;!&lt;/p&gt;
+&lt;h3 id=&quot;当不通过form-data进行传送数据时&quot;&gt;&lt;a href=&quot;#当不通过form-data进行传送数据时&quot; class=&quot;headerlink&quot; t
+      
+    
+    </summary>
+    
+    
+      <category term="页面" scheme="https://www.jpan.ink/tags/%E9%A1%B5%E9%9D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My First Paper</title>
+    <link href="https://www.jpan.ink/2018/03/25/My-First-Paper/"/>
+    <id>https://www.jpan.ink/2018/03/25/My-First-Paper/</id>
+    <published>2018-03-25T09:13:33.000Z</published>
+    <updated>2018-04-25T09:57:07.149Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://www.jpan.ink">jpan</a>!</p><p><img src="https://i.imgur.com/tiJmhCw.jpg" alt=""></p><p>2018年1月3日开始动手做博客</p><p>2018年3月20日博客有了背景 接着有了自己的链接</p><p>2018年4月25日发布第一篇博文</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;http://www.jpan.ink&quot;&gt;jpan&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/tiJmhCw.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2018年1月3日开始动手做博客&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="记录" scheme="https://www.jpan.ink/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
